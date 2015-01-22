@@ -1,0 +1,109 @@
+<head>
+  <title>tse</title>
+</head>
+
+<body>
+  <!--
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+  
+  -->
+  
+  <!--<div class="debug">
+    <label><input type="checkbox"> Debug</label>
+  </div>-->
+  <div class="demo__info">
+    Copyright TSE
+  </div>
+
+  <div class="parallax">
+    <div id="group1" class="parallax__group">
+      <div class="parallax__layer parallax__layer--base">
+          <img id="logo" src="images/logo.png"/>
+          <div class="title main_title">
+            Tech Startup Evangelists
+            <div class="subtitle">
+              University of Missouri
+            </div>
+          </div>
+         <!-- <img id="coffee" src="images/coffee.png"/>-->
+        <div class="title">
+        </div>
+      </div>
+    </div>
+    <div id="group2" class="parallax__group">
+      <div class="parallax__layer parallax__layer--back">
+      </div>
+      <div class="parallax__layer parallax__layer--base">
+      </div>
+    </div>
+    <div id="group3" class="parallax__group">
+      <div class="parallax__layer parallax__layer--base">
+        <div class="title section_title">Mission Statement</div>
+        <div class="section_content">
+          The purpose of the TSE shall be to help foster a startup mentality among software-centric majors at the University of Missouri. The TSE shall:
+          <ul>
+            <li>Promote collaboration among students</li>
+            <li>Provide counsel and direction to new student-led startups</li>
+            <li>Connect student-led startups with potential outside investors/investment</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="group4" class="parallax__group">
+      <div class="parallax__layer parallax__layer--back">
+        <div class="title"></div>
+      </div>
+      <div class="parallax__layer parallax__layer--base">
+        <div class="title"></div>
+      </div>
+    </div>
+    <div id="group5" class="parallax__group">
+      <div class="parallax__layer parallax__layer--base">
+        <div class="title section_title">Organization Principles</div>
+        <div class="section_content">
+          The purpose of the TSE shall be to help foster a startup mentality among software-centric majors at the University of Missouri. The TSE shall:
+          <ul>
+            <li>Promote collaboration among students</li>
+            <li>Provide counsel and direction to new student-led startups</li>
+            <li>Connect student-led startups with potential outside investors/investment</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="group6" class="parallax__group">
+      <div class="parallax__layer parallax__layer--back">
+        <div class="title"></div>
+      </div>
+      <div class="parallax__layer parallax__layer--base">
+        <div class="title"></div>
+      </div>
+    </div>
+
+    <div id="group7" class="parallax__group">
+      <div class="parallax__layer parallax__layer--base">
+        <div class="title section_title">Contact Information</div>
+        <div class="section_content">
+          <a href="mailto:mu-tse@outlook.com">mu-tse@outlook.com</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    var debugInput = document.querySelector("input");
+    function updateDebugState() {
+        document.body.classList.toggle('debug-on', debugInput.checked);
+    }
+    debugInput.addEventListener("click", updateDebugState);
+    updateDebugState();
+  </script>
+</body>
+
+<template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template>
