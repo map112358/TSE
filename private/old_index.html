@@ -1,18 +1,14 @@
-<head>
-  <title>tse</title>
-</head>
-
-<body>
+<template name='index_parallax'>
   <!--
-  <h1>Welcome to Meteor!</h1>
+<h1>Welcome to Meteor!</h1>
 
-  {{> hello}}
-  
-  -->
-  
-  <!--<div class="debug">
+{{> hello}}
+
+-->
+
+  <div class="debug">
     <label><input type="checkbox"> Debug</label>
-  </div>-->
+  </div>
   <div class="demo__info">
     Copyright TSE
   </div>
@@ -20,14 +16,13 @@
   <div class="parallax">
     <div id="group1" class="parallax__group">
       <div class="parallax__layer parallax__layer--base">
-          <img id="logo" src="images/logo.png"/>
-          <div class="title main_title">
-            Tech Startup Evangelists
-            <div class="subtitle">
-              University of Missouri
-            </div>
+        <img id="logo" src="images/logo.png"/>
+        <div class="title main_title">
+          Tech Startup Evangelists
+          <div class="subtitle">
+            University of Missouri
           </div>
-         <!-- <img id="coffee" src="images/coffee.png"/>-->
+        </div>
         <div class="title">
         </div>
       </div>
@@ -96,12 +91,12 @@
   <script>
     var debugInput = document.querySelector("input");
     function updateDebugState() {
-        document.body.classList.toggle('debug-on', debugInput.checked);
+      document.body.classList.toggle('debug-on', debugInput.checked);
     }
     debugInput.addEventListener("click", updateDebugState);
     updateDebugState();
   </script>
-</body>
+</template>
 
 <template name="hello">
   <button>Click Me</button>

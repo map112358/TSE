@@ -36,6 +36,7 @@
   -webkit-transform: translateZ(-300px) scale(2);
   transform: translateZ(-300px) scale(2);
   z-index: 3;
+  background-repeat: no-repeat;
 }
 
 .parallax__layer--deep {
@@ -47,7 +48,7 @@
 .parallax__group {
   position: relative;
   height: 500px; /* fallback for older browsers */
-  height: 100vh;
+  height: 100%;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
@@ -146,7 +147,7 @@ body {
 }
 
 #group2 .parallax__layer--back {
-  background: url(images/columns.jpg);
+  background-image: url(images/Columns_1920.jpg);
   background-size: 100%;
 }
 
@@ -171,7 +172,7 @@ body {
 }
 
 #group4 .parallax__layer--back {
-  background: url(images/truman.jpg);
+  background-image: url(images/Truman_1920.jpg);
   background-size: 100%;
 }
 
@@ -192,7 +193,7 @@ body {
 }
 
 #group6 .parallax__layer--back {
-  background: url(images/microsoft_app.jpg);
+  background-image: url(images/Creativity_1920.jpg);
   background-size: 100%;
 }
 
