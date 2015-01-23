@@ -7,93 +7,124 @@
   </section>
   <section id='img-columns' class='img container-fluid'>
     <div class='container'>
-      <h1>Mission Statement</h1>
-      <div>
-        The purpose of the TSE shall be to help foster a startup mentality among software-centric majors at the University of Missouri. The TSE shall:
-        <ul>
-          <li>Promote collaboration among students</li>
-          <li>Provide counsel and direction to new student-led startups</li>
-          <li>Connect student-led startups with potential outside investors/investment</li>
-        </ul>
-      </div>
+      {{> upcoming_events}}
     </div>
   </section>
   <section class='container-fluid inverse'>
     <div class='container'>
-      <h1>Organization Principles</h1>
-      <div>
-        Early-stage companies need to share their ideas with a variety of people -- potential partners,customers, and advisors. The TSE will promote sharing ideas while preserving intellectual property.
-        <ul class='list-none'>
-          <li><h3>On Intellectual Property:</h3>
-            <ul>
-              <li>Non-disclosure agreements are required to attend pitch parties</li>
-              <li>Research-based work <strong>must go through the school first</strong></li>
-              <li>Your idea is yours alone: TSE cannot and would not take any cut (that's for the investors to do)</li>
-            </ul>
-          </li>
-          <li><h3>On Criticism:</h3>
-            <ul>
-              <li>No idea is a bad idea, but neither is it perfect</li>
-              <li>Comments may be critical, but <strong>must be constructive</strong></li>
-              <li>Criticism should come early and often</li>
-              <li>Critique the idea, not the person</li>
-            </ul>
-          </li>
-          <li><h3>On Responsibility:</h3>
-            <ul>
-              <li>Your company, your responsibility: TSE is a tool to help you, not a member of your startup</li>
-              <li><strong>Never</strong> drink the kool-aid: always be your own worst critic</li>
-              <li>Own your failures, learn from them, and make them your strenths</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+      {{> mission_statement}}
     </div>
   </section>
   <section id='img-creativity' class='img container-fluid'>
     <div class='container'>
-      <h1>Leadership</h1>
-      <div>
-        <ul class='list-none'>
-          <li><strong>CEO</strong> - Sean Lander, Informatics, PhD Candidate</li>
-          <li><strong>President</strong> - Mike Phinney, Computer Science, PhD Candidate</li>
-          <li><strong>CFO</strong> - Devin Petersohn, Computer Science, Junior</li>
-          <li><strong>CIO</strong> - Hongfei Cao, Computer Science, PhD Candidate</li>
-          <li><strong>COO</strong> - Benjamin Merideth, Informatics, PhD Candidate</li>
-          <li><strong>CMO</strong> - Open position for a social media savy individual</li>
-          <hr>
-          <li><strong>Advisor</strong> - Chi-Ren Shyu, Computer Science, Informatics, Electrical and Computer Engineering...</li>
-        </ul>
-      </div>
+      {{> org_principles}}
     </div>
   </section>
   <section class='container-fluid'>
     <div class='container'>
-      <h1>Upcoming Events</h1>
-      <div>
-        <ul class='list-none'>
-          <li><h3><small>Jan. 29, 2015</small> Introductory Meeting</h3></li>
-        </ul>
-      </div>
+      {{> leadership}}
     </div>
   </section>
   <section id='img-truman' class='img container-fluid'>
     <div class='container'>
-      <h1>Contact Us</h1>
-      <div class='row'>
-        <div class='col-sm-2'>
-          <span class='glyphicon glyphicon-envelope' aria-hidden='true'></span> Email
-        </div>
-        <div class='col-sm-4'>
-          <a href='mailto:mu-tse@outlook.com'>mu-tse@outlook.com</a>
-        </div>
-        <div class='col-sm-2'>
-          <span class='glyphicon glyphicon-star'></span> Twitter
-        </div>
-        <div class='col-sm-4'>
-          <a href='https://twitter.com/mizzou_tse'>@mizzou_tse</a>
-        </div>
-      </div>
+      {{> contact_us}}
     </div>
   </section>
+</template>
+
+<template name='mission_statement'>
+  <h1>Mission Statement</h1>
+  <div>
+    The purpose of the TSE shall be to help foster a startup mentality among software-centric majors at the University of Missouri. The TSE shall:
+    <ul>
+      <li>Promote collaboration among students</li>
+      <li>Provide counsel and direction to new student-led startups</li>
+      <li>Connect student-led startups with potential outside investors/investment</li>
+    </ul>
+  </div>
+</template>
+
+<template name='org_principles'>
+  <h1>Organization Principles</h1>
+  <div>
+    Early-stage companies need to share their ideas with a variety of people -- potential partners,customers, and advisors. The TSE will promote sharing ideas while preserving intellectual property.
+    <ul class='list-none'>
+      <li><h3>On Intellectual Property:</h3>
+        <ul>
+          <li>Non-disclosure agreements are required to attend pitch parties</li>
+          <li>Research-based work <em>must go through the university first</em></li>
+          <li>Your idea is yours alone: TSE cannot and would not take any cut (that's for the investors to do)</li>
+        </ul>
+      </li>
+      <li><h3>On Criticism:</h3>
+        <ul>
+          <li>No idea is a bad idea, but nothing is perfect</li>
+          <li>Comments may be critical, but <em>must be constructive</em></li>
+          <li>Criticism should come early and often</li>
+          <li>Critique the idea, not the person</li>
+        </ul>
+      </li>
+      <li><h3>On Responsibility:</h3>
+        <ul>
+          <li>Your company, your responsibility: TSE is a tool to help you, not a member of your startup</li>
+          <li><em>Never</em> drink the kool-aid: always be your own harshest critic</li>
+          <li>Own your failures, learn from them, and make them your strenths</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</template>
+
+<template name='leadership'>
+  <h1>Leadership</h1>
+  <div>
+    <ul class='list-none'>
+      <li><strong>CEO</strong> - Sean Lander, Informatics, PhD Candidate</li>
+      <li><strong>President</strong> - Mike Phinney, Computer Science, PhD Candidate</li>
+      <li><strong>CFO</strong> - Devin Petersohn, Computer Science, Junior</li>
+      <li><strong>CIO</strong> - Hongfei Cao, Computer Science, PhD Candidate</li>
+      <li><strong>COO</strong> - Benjamin Merideth, Informatics, PhD Candidate</li>
+      <li><strong>CMO</strong> - Open position for a social media savy individual</li>
+      <hr>
+      <li><strong>Advisor</strong> - Chi-Ren Shyu, Computer Science, Informatics, Electrical and Computer Engineering...</li>
+    </ul>
+  </div>
+</template>
+
+<template name='upcoming_events'>
+  <h1>Upcoming Events</h1>
+  <div>
+    <ul class='list-none'>
+      <li>
+        <h3>
+          Introductory Meeting - Ketcham Auditorium<br>
+          <small>Thur. Jan. 29, 2015 5:00-6:00pm</small>
+        </h3>
+         <ul>
+           <li>Introduction to TSE, its leadership, and it's plan for this semester.</li>
+           <li>Meet and mingle after announcements - look for like minds, our first pitch party will happen soon!</li>
+           <li>Current TSE members will head to iTap after the meeting to talk with anyone who still has questions (over 21 only). This event is separate from the meeting and is in no-way required.</li>
+           <li>Questions and answers will be added to a FAQ so those who could not make it can stay caught up.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</template>
+
+<template name='contact_us'>
+  <h1>Contact Us</h1>
+  <div class='row'>
+    <div class='col-sm-2'>
+      <span class='glyphicon glyphicon-envelope' aria-hidden='true'></span> Email
+    </div>
+    <div class='col-sm-4'>
+      <a href='mailto:mu-tse@outlook.com'>mu-tse@outlook.com</a>
+    </div>
+    <div class='col-sm-2'>
+      <span class='glyphicon glyphicon-star'></span> Twitter
+    </div>
+    <div class='col-sm-4'>
+      <a href='https://twitter.com/mizzou_tse' target='_blank'>@mizzou_tse</a>
+    </div>
+  </div>
 </template>
