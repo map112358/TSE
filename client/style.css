@@ -1,13 +1,17 @@
 body {
   font-size: 1.8em;
   height: 100%;
-  color: rgb(51, 51, 51);
+  color: rgb(51,51,51);
+}
+
+ul.list-none {
+  list-style: none;
 }
 
 #title {
   margin: 20px;
   padding-top: 100px;
-  min-height: 400px;
+  min-height: 600px;
   background-image: url(images/logo.png);
   background-position: 0px 0px, top left;
   background-color: white;
@@ -27,7 +31,7 @@ body {
 section {
   position: relative;
   padding: 20px 0;
-  min-height: 600px;
+  min-height: 800px;
   display: flex;
   align-items: center;
 }
@@ -67,29 +71,36 @@ section.img > div {
 #img-creativity {
   background-image: url(images/Creativity_1920.jpg);
 }
+#img-truman {
+  background-image: url(images/Truman_1920.jpg);
+  background-position: top;
+}
+
+.inverse {
+  background-color: rgb(51,51,51);
+  color: rgb(220,220,220);
+}
 
 .footer {
   bottom: 0;
   width: 100%;
   height: 200px;
-  background-color: #555;
-  color: white;
   display: flex;
   align-items: center;
 }
 
 .footer a:link {
-  color: #553000;
-}
-
-.footer a:visited {
-  color: #220000;
-}
-
-.footer a:hover {
   color: #886000;
 }
 
+.footer a:visited {
+  color: #886060;
+}
+
+.footer a:hover {
+  color: #BB9000;
+}
+
 .footer a:active {
-  color: #775000;
+  color: #998000;
 }
