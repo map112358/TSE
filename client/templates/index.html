@@ -95,18 +95,9 @@
   <h1>Upcoming Events</h1>
   <div>
     <ul class='list-none'>
-      <li>
-        <h3>
-          Introductory Meeting - Ketchum Auditorium<br>
-          <small>Thur. Jan. 29, 2015 5:00-6:00pm</small>
-        </h3>
-         <ul>
-           <li>Introduction to TSE, its leadership, and it's plan for this semester.</li>
-           <li>Meet and mingle after announcements - look for like minds, our first pitch party will happen soon!</li>
-           <li>Current TSE members will head to iTap after the meeting to talk with anyone who still has questions (over 21 only). This event is separate from the meeting and is in no-way required.</li>
-           <li>Questions and answers will be added to a FAQ so those who could not make it can stay caught up.</li>
-        </ul>
-      </li>
+      {{#each events}}
+      {{> event}}
+      {{/each}}
     </ul>
   </div>
 </template>

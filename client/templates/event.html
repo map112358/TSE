@@ -1,0 +1,20 @@
+<template name='event'>
+  <li>
+    <h3>
+      {{name}} - {{location}}<br>
+      <small>{{date}} {{from_time}}-{{to_time}}</small>
+    </h3>
+    <p>{{description}}</p>
+    <p><strong>Speakers:</strong>
+    <ul>
+      {{#each speakers}}
+      {{> speaker}}
+      {{/each}}
+    </ul>
+  </p>
+</li>
+</template>
+
+<template name='speaker'>
+  <li>{{speaker}}</li>
+</template>
