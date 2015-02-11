@@ -1,0 +1,73 @@
+<head>
+  <style>
+    body {
+      -webkit-perspective: 300px;
+      perspective: 300px;
+    }
+    .para {
+      position: relative;
+      -webkit-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+    }
+    .para:first {
+      margin-top: 0;
+    }
+    .content {
+      position: relative;
+      height: 400px;
+      z-index: 4;
+      background-color: rgba(255,255,255,0.5);
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+    }
+    
+    .background {
+      position: relative;
+      height: 800px;
+      margin-top: -200px;
+      margin-bottom: -200px;
+      z-index: 3;
+      -webkit-transform: translateZ(-300px) scale(2);
+      transform: translateZ(-300px) scale(2);
+    }
+    
+    .background-1 {
+      background-color: black;
+    }
+    
+    .background-2 {
+      background-color: green;
+    }
+    
+    .background-3 {
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class='para'>
+    <div class='content'>
+      <h1>Hello 1</h1>
+    </div>
+  </div>
+  <div class='para'>
+    <div class='background background-1'>
+
+    </div>
+  </div>
+  <div class='para'>
+    <div class='content'>
+      <h1>Hello 2</h1>
+    </div>
+  </div>
+  <div class='para'>
+    <div class='background background-2'>
+
+    </div>
+  </div>
+  <div class='para'>
+    <div class='content'>
+      <h1>Hello 3</h1>
+    </div>
+  </div>
+</body>
