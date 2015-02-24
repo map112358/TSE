@@ -14,6 +14,18 @@ Events are Speakers, Pitch Parties, or Workshops
 * speakers: Array of speakers ([String])
 * location: Location of th event (String)
 
+```json
+db.events.insert({
+name: "",
+description: "",
+date: new Date(Y,M(0 index),D),
+from_time: "",
+to_time: "",
+speakers: [""],
+location: ""
+})
+```
+
 Members
 -------
 Members are students/faculty which have attended a TSE meeting and signed in OR completed an NDA
