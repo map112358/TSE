@@ -1,7 +1,7 @@
 Template.upcoming_events.helpers({
   events: function() {
     // Return all events which have not yet happened
-    return Events.find({date: {$gt: new Date()}}, {sort: {date: -1}});
+    return Events.find({date: {$gte: new Date()}}, {sort: {date: -1}});
   }
 })
 
